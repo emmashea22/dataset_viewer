@@ -9,6 +9,7 @@ library(rapportools)
 gencode_annotation <- read.csv('https://gdsx.prd.nibr.novartis.net:4000/getAnnotationData?annotation_name=gencode.gene&column_names=GENE_SYMBOL&media_type=text%2Fcsv&streaming=false')
 names(gencode_annotation) <- c('ENSEMBL_ID', "GENE_SYMBOL")
 
+#Sample level metadata information. This was a dataset created separately by merging and joining the individual metadata files for each dataset (code not part of app)
 sample_annotation <- readRDS('iobp_subset_noNormals_annotation.RDS')
 
 getGdsxWsCall <- function(geneDataTable, observationTables) {
