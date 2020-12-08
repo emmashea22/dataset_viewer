@@ -14,7 +14,7 @@ library(ggcorrplot)
 
 #Outside of app to run---
 #source code with functions: 
-source('annotation_getWS_Data_code.R')
+source('annotation_getWS_data_code.R')
 
 dataset_names <- c('TCGA', 'Target', 'GTEx', 'Blueprint', 'CoMMpass', 'CCLE', 'PTX')
 
